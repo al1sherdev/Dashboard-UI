@@ -1,0 +1,204 @@
+.debit__card {
+    color: #fff;
+    .card__num {
+        font-size: 22px;
+        font-weight: 500;
+        margin: 30px 0;
+    }
+    .card__info {
+        .card__holder {
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+        p {
+            font-size: 12px;
+            color: var(--gray);
+        }
+        h6 {
+            font-size: 17px;
+            font-weight: 500;
+        }
+        img {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+        }
+    }
+}
+
+
+.budget__card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--gray);
+    .icon {
+        margin-bottom: 15px;
+        svg {
+            width: 50px;
+            height: 50px;
+            color: var(--gray);
+        }
+    } 
+    h5, h4 {
+        color: var(--gray2);
+        margin: 15px 0;
+        font-size: 1.7rem;
+        font-weight: 700;
+    }
+    p {
+        border-bottom: 1px solid var(--gray);
+    }
+    
+}
+
+
+.invoice {
+    .big__title {
+        margin-bottom: 1.5rem;
+    }
+    .invoices {
+        display: flex;
+        justify-content: space-between;
+        .date {
+            h6 {
+                color: var(--gray2);
+            }
+            p {
+                font-size: 0.9rem;
+                color: var(--gray);
+            }
+        }
+        .dollor, .document {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin: 15px 0;
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--gray2);
+        }
+    }
+}
+.margin {
+    margin-top: -145px !important;
+}
+
+.payment__method {
+    .card {
+        width: 49%;
+        font-size: 1rem;
+        border-radius: 10px; 
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 0.8fr 3fr 0.5fr;
+        align-items: center;
+        justify-content: space-around;
+        color: var(--gray2);
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        p {
+            justify-content: flex-end;
+            svg {
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+.billing__info {
+    color: var(--gray2);
+    .card {
+        background-color: #F8F9FA;
+        border: none;
+        margin: 10px 0;
+        padding: 2em;
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            .name {
+                font-size: 1.1rem;
+                font-weight: 500;
+            }
+            .edit {
+                text-transform: uppercase;
+                font-size: .9rem;
+                font-weight: 500;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                svg {
+                    width: 20px;
+                    height: 20px;
+                    margin-left: 10px;
+                    cursor: pointer;
+                    &:nth-child(1) {
+                        color: red;
+                    }
+                }
+            }
+        }
+        .body {
+            display: flex;
+            flex-direction: column;
+            small {
+                color: var(--gray);
+                margin: 4px 0;
+            }
+            span {
+                font-weight: 500;
+                color: var(--gray2);
+            }
+        }
+    }
+}
+
+.big__title {
+    color: var(--gray);
+    margin-bottom: 20px;
+    .date {
+        border: none;
+        outline: none;
+        color: var(--gray);
+        cursor: pointer;
+    }
+}
+
+.title {
+    color: var(--gray);
+    font-weight: 500;
+    font-size: .9rem;
+    margin-bottom: 10px;
+}
+.news {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--gray);
+    margin: 10px 0;
+    &__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px 0;
+    }
+    .icon {
+        border: 1px solid rgb(57, 172, 12);
+        border-radius: 50%;
+        color: rgb(57, 172, 12);
+        &:nth-last-child(1) {
+            color: var(--gray2) !important;
+        }
+    }
+}

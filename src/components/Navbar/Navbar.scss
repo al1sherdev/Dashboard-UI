@@ -1,0 +1,38 @@
+.navbar {
+    width: 80%;
+    height: 80px;
+    position: fixed;
+    left: 18%;
+    margin: 0 auto;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.5px);
+    -webkit-backdrop-filter: blur(9.5px);
+    border: 1px solid rgba(255, 255, 255, 0.151);
+    border-radius: 1em;
+    padding: 1em;
+    margin-top: 0.5em;
+    z-index: 10;
+    .icon {
+        svg {
+            width: 20px;
+            height: 20px;
+            color: var(--gray);
+        }
+    }
+    .setting__icons {
+        svg {
+            width: 20px;
+            height: 20px;
+            margin-left: 15px;
+            color: var(--gray2);
+            cursor: pointer;
+            transition: 0.2s ease-in-out;
+            &:hover {
+                color: var(--blue);
+            }
+        }
+    }
+}

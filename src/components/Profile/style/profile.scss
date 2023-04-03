@@ -1,0 +1,56 @@
+.subtitle {
+    p {
+        font-size: 14px !important;
+        color: var(--gray2);
+        font-weight: 600;
+    }
+}
+.platform {
+    p {
+        color: var(--gray);
+    }
+}
+
+strong {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--gray2);
+}
+.text {
+    font-size: 13px;
+    color: var(--gray);
+}
+
+.profile__info {
+    .description {
+        margin-top: 30px;
+        margin-bottom: 25px;
+    }
+    .detail {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: var(--gray);
+        margin-left: 12px;
+    }
+}
+
+.conversations {
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 6px 0;
+        .name {
+            margin-left: 12px !important;
+        }
+        img {
+            width: 15%;
+            height: 15%;
+            border-radius: 0.6em;
+        }
+        a {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+    }
+}

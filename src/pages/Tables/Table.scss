@@ -1,0 +1,11 @@
+#table {
+    width: calc(100% - 20%);
+    img {
+        width: 45px;
+        height: 45px;
+        border-radius: 1em;
+    }
+    .borderRaduis {
+        border-radius: 1em !important;
+    }
+}

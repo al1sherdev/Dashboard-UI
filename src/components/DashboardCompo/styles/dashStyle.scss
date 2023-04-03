@@ -1,0 +1,235 @@
+// Growth Cards
+.growth__card {
+    width: 22%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 1em;
+    &_info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #67748e;
+        }
+        .number {
+            display: flex;
+            align-items: center;
+            .data {
+                font-size: 21px;
+                font-weight: 700;
+                color: #404373;
+            }
+            .percent {
+                margin-left: 10px;
+                font-size: 1rem;
+                font-weight: 700;
+                color: #82d616;    
+            }
+        }
+    }
+    &_icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1rem;
+        background-color: var(--blue);
+        border-radius: 0.8em;
+        padding: 10px;
+        svg {
+            font-size: 2rem !important;
+            color: #fff;
+        }
+    }
+}
+
+// Actions
+.actions__card {
+    padding: 1em;
+    border-radius: 1em;
+    background-color: #fff;
+    .info {
+        .title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--gray);
+        }
+        .stitle {
+            font-size: 19px;
+            font-weight: 700;
+            color: var(--gray2);
+        }
+        .text {
+            color: var(--gray);
+        }
+        .link {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--gray);
+        }
+    }
+    .image {
+        padding: 1.3rem 0;
+        background-color: var(--blue);
+        border-radius: 1em;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+// Work
+.work__card {
+    padding: 1em;
+    padding-right: 6em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    .title {
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: #fff;
+    }
+    .text {
+        color: #fff;
+    }
+    .link {
+        margin-top: 2.4rem;
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #fff;
+    }
+}
+
+// Order
+.order__wrap {
+    margin-bottom: 15px;
+    h6 {
+        font-size: 19px;
+        font-weight: 500;
+        color: var(--gray);
+    }
+    .header_title {
+        font-weight: 500;
+        color: var(--gray);
+        span {
+            font-weight: 700;
+            color: rgba(0, 0, 0, 0.719);
+        }
+        .arrow_up {
+            font-size: 1.2rem;
+            color: #82d616;
+        }
+    }
+    .order {
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+        &__info {
+            margin-left: 10px;
+            line-height: 20px;
+            .title {
+                color: var(--gray2);
+                font-weight: 500;
+            }
+            .stitle {
+                font-weight: 600;
+                font-size: 14px;
+                color: var(--gray);
+            }
+        }
+        
+    }
+
+}
+
+
+// Project
+.project {
+    &__title {
+        color: var(--gray);
+        h5 {
+            font-size: 19px;
+            font-weight: 500;
+        }
+        p {
+            svg {
+                color: #82d616;
+            }
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+    .icon {
+        .pointer {
+            cursor: pointer;
+        }
+        color: var(--gray2);
+    }
+} 
+.table__head {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr 1fr 1fr;
+    border-bottom: 0.5px solid var(--gray);
+    p {
+        font-size: 12px;
+        font-weight: 700;
+        color: var(--gray);
+    }
+}
+.table__body {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr 1fr 1fr;
+    border-bottom: 1px solid var(--gray);
+    padding: 10px 0;
+    .companies {
+        display: flex;
+        align-items: center;
+        img {
+            width: 34px;
+            height: 34px;
+        }
+        h6 {
+            margin-left: 7px;
+            font-weight: 600;
+            color: var(--gray2);
+        }
+    }
+    .members {
+        img {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+        }
+    }
+    .budget {
+        p {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--gray);
+        }
+    }
+    .completion {
+        color: var(--gray);
+        .full {
+            width: 100%;
+            height: 6px;
+            border-radius: 25px;
+            background-color: var(--gray);
+            background-color: red;
+        }
+        .blue {
+            background-color: #1669d4;
+        }
+    }
+}
+
