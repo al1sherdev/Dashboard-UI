@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Col, Row } from 'react-bootstrap';
 
 // components
@@ -11,6 +11,9 @@ import Transactions from '../../components/BillingsCompo/Transactions';
 import Footer from "../../pages/Footer/Footer";
 
 const Billing = () => {
+  useEffect(() => {
+    window.scroll(0, 0)
+}, [])
   return (
     <div className='page' id='billing'>
       <Row>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import Actions from '../../components/DashboardCompo/Actions';
 import GrowthCard from '../../components/DashboardCompo/GrowthCard';
@@ -9,6 +9,9 @@ import Footer from '../Footer/Footer';
 import './Dashboard.scss';
 
 const Dashboard = () => {
+  useEffect(() => {
+    window.scroll(0, 0)
+}, [])
   return (
     <div className='page' id='dashboard'> 
     <Row>

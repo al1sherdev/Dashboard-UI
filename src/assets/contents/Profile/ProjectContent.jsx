@@ -2,9 +2,9 @@ import project1 from '../../images/ProjectImg/home-decor-1.jpg';
 import project2 from '../../images/ProjectImg/home-decor-2.jpg';
 import project3 from '../../images/ProjectImg/home-decor-3.jpg';
 import person1 from '../../images/ProjectImg/bruce-mars.jpg';
-import person2 from '../../images/ProjectImg/team-3.jpg';
-import person3 from '../../images/ProjectImg/team-2.jpg';
-import person4 from '../../images/ProjectImg/team-4.jpg';
+import person2 from '../../images/team-3.jpg';
+import person3 from '../../images/team-2.jpg';
+import person4 from '../../images/team-4.jpg';
 
 export const ProfileProjectsContent = [
   {

@@ -2,7 +2,7 @@ import React from 'react';
 import { OrdersCardContent } from '../../assets/contents/Dashboard/Orders';
 import { AiOutlineArrowUp } from 'react-icons/ai';
 
-const Orders = () => {
+const Orders = () => {      
   return (
     <div className='component order__wrap'>
         <h6>Orders overview</h6>
