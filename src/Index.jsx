@@ -1,13 +1,12 @@
-import React, { useState } from 'react'
-import App from './App'
-import Register from './pages/Auth/Register'
+import React, { useState } from 'react';
+import App from './App';
+import Login from './pages/Auth/Login';
 
 const Index = () => {
   const [token, setToken] = useState(window.localStorage.getItem('token'))
 
-
   if(!token) {
-    return <Register setToken={setToken} />
+    return <Login setToken={setToken} />
   } else {
     return <App />
   }

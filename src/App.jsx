@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 // components
 import Navbar from "./components/Navbar/Navbar";
 import Sidebar from "./components/Sidebar/Sidebar";
+import Login from "./pages/Auth/Login";
 
 // pages
 import Billing from "./pages/Billing/Billing";
@@ -12,7 +13,6 @@ import Signin from "./pages/Signin/Signin";
 import Tables from "./pages/Tables/Tables";
 
 function App() {
-  console.log(window.location)
   return (
     <div className="app">
         <BrowserRouter>
@@ -23,7 +23,7 @@ function App() {
               <Route path="/tables" element={ <Tables /> } />
               <Route path="/billing" element={ <Billing />} />
               <Route path="/profile" element={ <Profile />} />
-              <Route path="/signin" element={ <Signin />} />
+              <Route path="/signin" element={ <Login /> } />
             </Routes>
         </BrowserRouter>
     </div>

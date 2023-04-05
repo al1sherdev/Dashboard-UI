@@ -56,7 +56,7 @@ const Sidebar = () => {
                     <span className='item__name'>Profile</span>
                 </li>
             </Link>
-            <Link to="/signin">
+            <Link to='/signin'>
                 <li className='list__item'>
                     <span className='item__icon'>
                         <FaSignInAlt />
