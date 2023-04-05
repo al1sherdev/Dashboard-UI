@@ -1,13 +1,11 @@
 import axios from 'axios';
-import React, { useEffect, useRef } from 'react'
-import { Container } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
-import SwitchControlled from '../../components/Profile/Switch'
+import React, { useEffect, useRef } from 'react';
+import { Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import SwitchControlled from '../../components/Profile/Switch';
 import AuthFooter from './AuthFooter';
 import { FormSec, RegisterSec } from './styled';
-
-
-
+import ScrollReveal from 'scrollreveal';
 
 const SignIn = ({ setToken }) => {
     const emailInput = useRef(null)
@@ -15,6 +13,23 @@ const SignIn = ({ setToken }) => {
 
     useEffect(() => {
         window.scroll(0, 0)
+        const sr = ScrollReveal({
+            origin: "top",
+            distance: "100px",
+            duration: 2000,
+            reset: false,
+            });
+            sr.reveal(
+            `
+            .component,
+            .anime,
+            .background_img
+            `,
+            {
+                opacity: 0,
+                interval: 100,
+            }
+            );
     }, [])
 
     function Auth(e) {
@@ -40,7 +55,7 @@ const SignIn = ({ setToken }) => {
                         <h4>Soft UI Dashboard</h4>
                         <button className='btn btn-info'>Free download</button>
                     </div>
-                    <FormSec>
+                    <FormSec className='anime'>
                         <div className='intro'>
                             <h2>Welcome Back</h2>
                             <p>Enter your email and password to sign in</p>

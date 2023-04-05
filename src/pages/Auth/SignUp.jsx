@@ -1,16 +1,17 @@
 import React, { useEffect, useRef } from 'react';
+import axios from 'axios';
+import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
-import SwitchControlled from '../../components/Profile/Switch';
+import ScrollReveal from 'scrollreveal';
 
 // images
 import apple from '../../assets/images/logo-apple.svg';
 import facebook from '../../assets/images/logo-facebook.svg';
 import google from '../../assets/images/logo-google.svg';
 
-import { RegisterSec, SignUpBacImg, SignUpSec } from './styled';
+import SwitchControlled from '../../components/Profile/Switch';
 import AuthFooter from './AuthFooter';
-import axios from 'axios';
-import { Link } from 'react-router-dom';
+import { RegisterSec, SignUpBacImg, SignUpSec } from './styled';
 
 
 const SignUp = ({ setToken }) => {
@@ -20,6 +21,23 @@ const SignUp = ({ setToken }) => {
 
     useEffect(() => {
       window.scroll(0, 0)
+      window.scroll(0, 0)
+        const sr = ScrollReveal({
+            origin: "top",
+            distance: "100px",
+            duration: 2000,
+            reset: false,
+            });
+            sr.reveal(
+            `
+            .component,
+            .anime
+            `,
+            {
+                opacity: 0,
+                interval: 100,
+            }
+            );
   }, [])
 
     function Auth(e) {
@@ -45,7 +63,7 @@ const SignUp = ({ setToken }) => {
             <h4>Soft UI Dashboard</h4>
             <button className='btn btn-info'>Free download</button>
         </div>
-          <SignUpSec>
+          <SignUpSec className='anime'>
             <h1>Welcome!</h1>
             <p>Use these awesome forms to login or create new account in your project for free.</p>
             <div className="card">

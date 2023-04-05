@@ -1,15 +1,45 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 
 // react icons
 import { MdDashboard,  } from 'react-icons/md';
 import { FaMoneyCheckAlt, FaSignInAlt } from 'react-icons/fa';
 import { CgProfile } from 'react-icons/cg';
 import { ImRocket } from 'react-icons/im';
+import ScrollReveal from 'scrollreveal';
 
 import './Sidebar.scss';
 
 const Sidebar = () => {
+
+    useEffect(() => {
+        const sr = ScrollReveal({
+            origin: "left",
+            distance: "80px",
+            duration: 2000,
+            reset: false,
+          });
+          sr.reveal(
+            `
+            .sidebar,
+            .sidebar__logo,
+            .list
+          `,
+            {
+              opacity: 0,
+              interval: 100,
+            }
+          );
+    }, [])
+
+    
+    const navigate = useNavigate()
+    const Logout = (e) => {
+        e.preventDefault()
+        window.localStorage.removeItem('token')
+        navigate('/')
+    }
+
   return (
     <div className='sidebar'>
         <div className="sidebar__logo">
@@ -64,14 +94,12 @@ const Sidebar = () => {
                     <span className='item__name'>Sign In</span>
                 </li>
             </Link>
-            {/* <Link to="/signup"> */}
-                <li className='list__item'>
+                <li className='list__item' onClick={Logout}>
                     <span className='item__icon'>
                         <ImRocket />
                     </span>
                     <span className='item__name'>Log Out</span>
                 </li>
-            {/* </Link> */}
         </ul>
         <div className="component bg-info text-white">
             <div className='doc'>DOCUMENTATION</div>

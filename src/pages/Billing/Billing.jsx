@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Col, Row } from 'react-bootstrap';
+import ScrollReveal from 'scrollreveal';
 
 // components
 import BillingInfoCard from '../../components/BillingsCompo/BillingInfoCard';
@@ -13,33 +14,49 @@ import Footer from "../../pages/Footer/Footer";
 const Billing = () => {
   useEffect(() => {
     window.scroll(0, 0)
+    const sr = ScrollReveal({
+      origin: "bottom",
+      distance: "80px",
+      duration: 2000,
+      reset: false,
+    });
+    sr.reveal(
+      `
+      .anime
+    `,
+      {
+        opacity: 0,
+        interval: 100,
+      }
+    );
 }, [])
+
   return (
     <div className='page' id='billing'>
       <Row>
         <Col xl="8">
           <Row>
-            <Col xl="8">
+            <Col className='anime' xl="8">
               <DebitCard />
             </Col>
-            <Col xl="4">
+            <Col className='anime' xl="4">
                 <BudgetCard />
             </Col>
           </Row>
         </Col>
-        <Col xl="4">
+        <Col className='anime' xl="4">
           <InvoiceCard />
         </Col>
-        <Col xl="8">
+        <Col className='anime' xl="8">
           <PaymentCard />
         </Col>
-        <Col xl="7">
+        <Col className='anime' xl="7">
           <BillingInfoCard  />
         </Col>
-        <Col xl="5">
+        <Col className='anime' xl="5">
           <Transactions />
         </Col>
-        <Col xl="12">
+        <Col className='anime' xl="12">
           <Footer />
         </Col>
       </Row>
@@ -47,4 +64,4 @@ const Billing = () => {
   )
 }
 
-export default Billing
+export default Billing;

@@ -1,12 +1,34 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Col } from 'react-bootstrap';
 import { AiFillHome, AiFillSetting } from 'react-icons/ai';
 import { CgProfile } from 'react-icons/cg';
 import { GoBell } from 'react-icons/go';
 import { Link } from 'react-router-dom';
+import ScrollReveal from 'scrollreveal';
 import './Navbar.scss';
 
 const Navbar = () => {
+
+  useEffect(() => {
+    const sr = ScrollReveal({
+        origin: "top",
+        distance: "80px",
+        duration: 2000,
+        reset: false,
+      });
+      sr.reveal(
+        `
+        .navbar,
+        .icon,
+        .setting__icons
+      `,
+        {
+          opacity: 0,
+          interval: 100,
+        }
+      );
+}, [])
+
   return (
     <div className='navbar'>
       <Col>
