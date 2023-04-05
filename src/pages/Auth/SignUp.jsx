@@ -94,11 +94,11 @@ const SignUp = ({ setToken }) => {
                   <div className='d-flex align-items-center my-4'>
                       <SwitchControlled className="switch" /> <span className='ms-2 remember'>I agree the Terms and Conditions</span> <br />
                   </div>
-                  <button className='btn btn-info w-100'>Sign In</button>
-                  <p>Don't have an account?
+                  <button className='btn btn-info w-100'>Sign Up</button>
+                  <p>Already have an account?
                     <span>
                       <Link to='/'>
-                        Sign In
+                          Sign in
                       </Link>
                     </span>
                   </p>

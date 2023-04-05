@@ -10,7 +10,7 @@ import ScrollReveal from 'scrollreveal';
 
 import './Sidebar.scss';
 
-const Sidebar = () => {
+const Sidebar = ({ setToken }) => {
 
     useEffect(() => {
         const sr = ScrollReveal({
@@ -34,9 +34,9 @@ const Sidebar = () => {
 
     
     const navigate = useNavigate()
-    const Logout = (e) => {
-        e.preventDefault()
+    const Logout = () => {
         window.localStorage.removeItem('token')
+        setToken('')
         navigate('/')
     }
 

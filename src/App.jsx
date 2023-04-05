@@ -12,11 +12,11 @@ import Profile from "./pages/Profile/Profile";
 import Signin from "./pages/Signin/Signin";
 import Tables from "./pages/Tables/Tables";
 
-function App() {
+function App({ setToken }) {
   return (
     <div className="app">
         <BrowserRouter>
-          <Sidebar />
+          <Sidebar setToken={ setToken } />
           <Navbar />
             <Routes>
               <Route path="/" element={ <Dashboard /> } />
