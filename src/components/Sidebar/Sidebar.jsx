@@ -64,14 +64,14 @@ const Sidebar = () => {
                     <span className='item__name'>Sign In</span>
                 </li>
             </Link>
-            <Link to="/signup">
+            {/* <Link to="/signup"> */}
                 <li className='list__item'>
                     <span className='item__icon'>
                         <ImRocket />
                     </span>
-                    <span className='item__name'>Sign Up</span>
+                    <span className='item__name'>Log Out</span>
                 </li>
-            </Link>
+            {/* </Link> */}
         </ul>
         <div className="component bg-info text-white">
             <div className='doc'>DOCUMENTATION</div>

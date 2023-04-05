@@ -7,7 +7,7 @@ const Index = () => {
 
 
   if(!token) {
-    return <Register />
+    return <Register setToken={setToken} />
   } else {
     return <App />
   }
