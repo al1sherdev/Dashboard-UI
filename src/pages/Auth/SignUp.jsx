@@ -81,10 +81,10 @@ const SignUp = ({ setToken }) => {
               </div>
               <div className='more'>
                 <span></span>
-                or
+                  or
                 <span></span>
               </div>
-              <form onSubmit={Auth} className=' w-75'>
+              <form onSubmit={Auth}>
                   <label>Name</label>
                   <input className='form-control' type="text" ref={nameInput} placeholder='Name' />
                   <label>Email</label>
@@ -97,7 +97,7 @@ const SignUp = ({ setToken }) => {
                   <button className='btn btn-info w-100'>Sign Up</button>
                   <p>Already have an account?
                     <span>
-                      <Link to='/signin'>
+                      <Link to='/'>
                           Sign in
                       </Link>
                     </span>

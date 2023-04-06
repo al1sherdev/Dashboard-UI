@@ -4,7 +4,7 @@ import "../DashboardCompo/styles/dashStyle.scss";
 
 const GrowthCard = () => {
   return (
-    <div className='d-flex justify-content-between w-100 my-4'>
+    <div className='d-flex flex-wrap justify-content-between w-100 my-4'>
         {
             GrowthCardContents.map((content, index) => {
                 return(

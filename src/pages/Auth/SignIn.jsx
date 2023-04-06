@@ -60,7 +60,7 @@ const SignIn = ({ setToken }) => {
                             <h2>Welcome Back</h2>
                             <p>Enter your email and password to sign in</p>
                         </div>
-                        <form onSubmit={Auth} className=' w-50'>
+                        <form onSubmit={Auth}>
                             <label>Email</label>
                             <input className='form-control' type="email" ref={emailInput} placeholder="Email" />
                             <label>Password</label>

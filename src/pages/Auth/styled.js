@@ -45,6 +45,25 @@ export const RegisterSec = styled.div`
             font-weight: 600;
         }
     }
+
+    @media (max-width: 500px) {
+        margin: 0;
+        padding: 10px 0;
+        .background_img {
+            width: 70%;
+            top: -10px;
+        }
+       .top__nav {
+        width: 100%;
+        height: 60px;
+        h4 {
+            font-size: 1rem;
+        }
+        button {
+            font-size: 1rem;
+        }
+       }
+    }
 ` 
 export const FormSec = styled.div`
     width: 60%;
@@ -61,6 +80,7 @@ export const FormSec = styled.div`
         }
    }
    form {
+    width: 50%;
     border: none;
     outline: none;
     input {
@@ -97,6 +117,28 @@ export const FormSec = styled.div`
     color: var(--gray);
     font-size: .9rem;
    }
+
+   @media (max-width: 500px) {
+    width: 100%;
+    .intro {
+        h2 {
+            font-size: 28px;
+        }
+        p {
+            font-size: 0.8rem;
+        }
+    }
+    form {
+        width: 100%;
+        input {
+            width: 100% !imported;
+        }
+        p {
+            text-align: center;
+        }
+    }
+
+   }
 `
 export const AuthFooterSec = styled.div`
     width: 50%;
@@ -116,6 +158,14 @@ export const AuthFooterSec = styled.div`
             }
         }
     }
+    @media (max-width: 500px) {
+        width: 100%;
+        .nav_links {
+            .nav_link {
+                font-size: 0.9rem;
+            }
+        }
+    }
 ` 
 export const SignUpBacImg = styled.div`
     position: absolute;
@@ -128,6 +178,9 @@ export const SignUpBacImg = styled.div`
     border-radius: 1rem;
     background: url(${curved14}) 100% / cover;
     z-index: -1;
+    @media (max-width: 500px) {
+        top: 1%;
+    }
 `
 export const SignUpSec = styled.div`
     width: 50%;
@@ -221,6 +274,19 @@ export const SignUpSec = styled.div`
                     font-weight: 600;
                 }
             }
+        }
+    }
+
+    @media (max-width: 500px) {
+        width: 100%;
+        h1 {
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+        .card {
+            width: 100%;
         }
     }
 `

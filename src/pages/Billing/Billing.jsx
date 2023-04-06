@@ -36,27 +36,27 @@ const Billing = () => {
       <Row>
         <Col xl="8">
           <Row>
-            <Col className='anime' xl="8">
+            <Col className='anime' xl="8" lg="12" md="12" sm="12">
               <DebitCard />
             </Col>
-            <Col className='anime' xl="4">
+            <Col className='anime' xl="4" lg="12" md="12" sm="12">
                 <BudgetCard />
             </Col>
           </Row>
         </Col>
-        <Col className='anime' xl="4">
+        <Col className='anime' xl="4" lg="12" md="12" sm="12">
           <InvoiceCard />
         </Col>
-        <Col className='anime' xl="8">
+        <Col className='anime' xl="8" lg="12" md="12" sm="12">
           <PaymentCard />
         </Col>
-        <Col className='anime' xl="7">
+        <Col className='anime' xl="7" lg="12" md="12" sm="12">
           <BillingInfoCard  />
         </Col>
-        <Col className='anime' xl="5">
+        <Col className='anime' xl="5" lg="12" md="12" sm="12">
           <Transactions />
         </Col>
-        <Col className='anime' xl="12">
+        <Col className='anime' xl="12" lg="12" md="12" sm="12">
           <Footer />
         </Col>
       </Row>

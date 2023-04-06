@@ -15,4 +15,16 @@
             margin: 0 10px;
         }
     }
+    @media (max-width: 500px) {
+        .made {
+            width: 100% !important;
+            display: flex;
+            justify-content: center;
+        }
+        .links {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
 }

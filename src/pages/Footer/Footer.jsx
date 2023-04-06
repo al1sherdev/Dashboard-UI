@@ -3,14 +3,14 @@ import './Footer.scss';
 
 const Footer = () => {
   return (
-    <div id='footer' className='d-flex justify-content-between'>
+    <div id='footer' className='d-flex flex-wrap justify-content-between'>
         <div className="made">
             Made with ❤ by
             <span>
                 <a href="https://github.com/al1sherdev">Alisherdev</a>
             </span>
         </div>
-        <div className="links d-flex">
+        <div className="links d-flex flex-wrap">
             <p>GitHub</p>
             <p>About Us</p>
             <p>Blog</p>

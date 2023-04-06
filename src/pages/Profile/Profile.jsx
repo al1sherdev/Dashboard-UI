@@ -32,7 +32,7 @@ const Profile = () => {
   return (
     <div className='page'>
       <Row>
-        <Col className='anime' xl="12">
+        <Col className='anime' xl="12" lg="12" md="12" sm="12">
           <ProfileNav />
         </Col>
         <Col className='anime' xl="4" lg="6" md="6" sm="12">

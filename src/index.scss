@@ -45,6 +45,9 @@ body {
     'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  @media (max-width: 500px) {
+    padding: 0;
+  }
 }
 .page {
   width: calc(100% - 20%);
@@ -52,7 +55,12 @@ body {
   position: absolute;
   top: 18%;
   left: 18%;
-  border-radius: 1em;
+  @media (max-width: 500px) {
+    width: 100% !important;
+    top: 14%;
+    left: 0%;
+    padding: 5px;
+  }
 }
 svg {
   width: 25px;

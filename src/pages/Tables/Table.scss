@@ -8,4 +8,8 @@
     .borderRaduis {
         border-radius: 1em !important;
     }
+    @media (max-width: 500px) {
+        width: 100% !important;
+        margin-top: 20px;
+    }
 }

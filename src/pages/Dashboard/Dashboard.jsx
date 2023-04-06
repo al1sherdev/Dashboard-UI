@@ -49,7 +49,7 @@ const Dashboard = () => {
       <Col className='anime' xl="8">
         <Projects />
       </Col>
-      <Col className='anime' xl="12">
+      <Col className='anime' xl="12" lg="12" md="12" sm="12">
         <Footer />
       </Col>
     </Row>
