@@ -8,7 +8,7 @@ const Index = () => {
   if(!token) {
     return <Login setToken={setToken} />
   } else {
-    return <App setToken={setToken} />
+    return <App setToken={setToken} token={token} />
   }
 
 }

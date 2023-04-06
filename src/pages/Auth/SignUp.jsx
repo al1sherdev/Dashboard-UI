@@ -97,7 +97,7 @@ const SignUp = ({ setToken }) => {
                   <button className='btn btn-info w-100'>Sign Up</button>
                   <p>Already have an account?
                     <span>
-                      <Link to='/'>
+                      <Link to='/signin'>
                           Sign in
                       </Link>
                     </span>
