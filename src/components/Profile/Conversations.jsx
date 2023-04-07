@@ -13,7 +13,7 @@ const Conversations = () => {
             {
                 ConversationsContent.map((content, index) => {
                     return(
-                        <div className='conversations__item'>
+                        <div key={index} className='conversations__item'>
                             <img src={content.img} alt="img" />
                             <div className="name">
                                 <strong>{content.name}</strong>

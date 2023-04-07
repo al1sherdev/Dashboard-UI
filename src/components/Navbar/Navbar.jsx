@@ -36,11 +36,12 @@ const Navbar = () => {
           <AiFillHome /> / Dashboard
           <strong className='d-block my-1'>Dashboard</strong>
         </div>
+        <div className='dashboardui'>Dashboard UI</div>
       </Col> 
       <Col className='setting__icons d-flex justify-content-end align-items-center'>
         <input 
           type="search" 
-          className='form-control fs-6 w-50 py-2'
+          className='form-control fs-6'
           placeholder='Type here'
         />
         <Link to="/profile">

@@ -20,6 +20,9 @@ strong {
 }
 
 .profile__info {
+    .padd {
+        margin: 0;
+    }
     .description {
         margin-top: 30px;
         margin-bottom: 25px;
@@ -58,6 +61,7 @@ strong {
         color: var(--gray2);
     }
     .box {
+        width: 25%;
         margin: 0 8px;
         img {
             width: 100%;
@@ -148,5 +152,44 @@ strong {
 }
 
 @media (max-width: 500px) {
- 
+    .profile_nav {
+        width: 100%;
+        .person_info {
+            display: block;
+            .image {
+                width: 40px;
+                height: 40px;
+                img {
+                    border-radius: 50%;
+                }
+            }
+            .name {
+                margin-left: 0;
+                h6 {
+                    font-size: 0.9rem;
+                    font-weight: 600;
+                }
+                p {
+                    font-size: .8rem;
+                    font-weight: 400;
+                }
+            }
+        }
+        .assets {
+            display: block;
+        }
+    }
+
+
+    .projects {
+        .box {
+            width: 100%;
+            margin: 15px 0;
+        }
+    }
+    .profile__info {
+        .padd {
+            margin: 1rem 0 !important;
+        }
+    }
 }

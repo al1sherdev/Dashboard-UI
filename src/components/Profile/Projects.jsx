@@ -12,8 +12,8 @@ const Projects = () => {
       {
         ProfileProjectsContent.map((content, index) => {
           return(
-            <Col xl="12" className='w-25'>
-              <div className='box' key={index}>
+            <Col xl="12" className='box'>
+              <div key={index}>
                 <img src={content.img} alt="img" />
                 <p>{content.number}</p>
                 <strong>{content.name}</strong>

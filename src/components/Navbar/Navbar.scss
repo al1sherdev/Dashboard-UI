@@ -34,12 +34,28 @@
                 color: var(--blue);
             }
         }
+        input {
+            width: 50%;
+            padding: 5px 0;
+        }
+    }
+    .dashboardui {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: var(--blue);
+        display: none;
     }
 
     @media (max-width: 500px) {
         width: 100%;
         left: 0%;
         margin-top: 0em;
+        .icon {
+            display: none;
+        }
+        .dashboardui {
+            display: block;
+        }
         .setting__icons {
             input {
                 width: 100% !important;

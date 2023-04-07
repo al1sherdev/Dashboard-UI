@@ -3,7 +3,7 @@ import { ProfileDescriptionContent, ProfileDetailsContent } from '../../assets/c
 
 const ProfileInfo = () => {
   return (
-    <div className='component h-100'>
+    <div className='component h-100 padd'>
         <div className="profile__info">
             <div className="title">Profile Information</div>
             <p className='text description'>{ProfileDescriptionContent.text}</p>

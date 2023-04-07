@@ -76,7 +76,7 @@ const Sidebar = ({ setToken }) => {
                 </li>
             </Link>
         </ul>
-        <ul className='list mt-5'>
+        <ul className='list margin__top'>
             <p className='fs-6 fw-bolder text-secondary'>ACCOUNT PAGES</p>
             <Link to="/profile">
                 <li className='list__item'>
@@ -101,7 +101,7 @@ const Sidebar = ({ setToken }) => {
                     <span className='item__name'>Log Out</span>
                 </li>
         </ul>
-        <div className="component bg-info text-white">
+        <div className="component bg-info text-white blue">
             <div className='doc'>DOCUMENTATION</div>
         </div>
         <button className='component upg mt-3 btn btn-info'>UPGRADE TO PRO +</button>

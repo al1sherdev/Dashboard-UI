@@ -57,9 +57,10 @@ body {
   left: 18%;
   @media (max-width: 500px) {
     width: 100% !important;
-    top: 14%;
+    top: 10%;
     left: 0%;
     padding: 5px;
+    margin: 10px 0;
   }
 }
 svg {
