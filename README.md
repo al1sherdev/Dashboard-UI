@@ -1,4 +1,3 @@
 # Dashboard-UI
-<strong>UI Dashboard<strong/>;
-animation scrollreveal;
-yes Mobile version;
+ *<h5>Animation scrollreveal<h5/>
+ *<h5>Mobile version<h5/>
